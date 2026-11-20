@@ -1,0 +1,10 @@
+{
+  "name": "Remix Poshak — Luxury Virtual Try-On Atelier",
+  "description": "Luxury fashion storefront and virtual try-on atelier featuring Live Camera Calibration, Upload Photo Try-On, and Dummy White Studio across Shirts, T-Shirts, Jackets, Bottoms, Kurtas, and Sarees.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
