@@ -168,12 +168,12 @@ app.post('/api/tryon/analyze', async (req, res) => {
 
 /**
  * Real virtual try-on inference via the Hugging Face Space
- * AnujArunKadam/fashn-virtual-tryon (Gradio). Endpoints (from the Space's app.py):
+ * AnujArunKadam/vton21 (Gradio). Endpoints (from the Space's app.py):
  *   /upload_tryon (person_image, garment_image, category, photo_type, steps, seed)
  *   /model_tryon  (model_choice,  garment_image, category, photo_type, steps, seed)
  * The HF token (HF_TOKEN) stays on this server and is never sent to the browser.
  */
-const HF_SPACE_ID = process.env.HF_SPACE_ID || 'AnujArunKadam/fashn-virtual-tryon';
+const HF_SPACE_ID = process.env.HF_SPACE_ID || 'AnujArunKadam/vton21';
 const HF_TRYON_TIMEOUT_MS = 5 * 60 * 1000;
 const TRYON_STEPS = 20; // Space default (slider range 10–50)
 const PERSON_ALLOWED_MIME = ['image/jpeg', 'image/png', 'image/webp'];
